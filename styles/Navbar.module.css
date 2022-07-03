@@ -1,0 +1,51 @@
+.container{
+    height: 100px;
+    padding: 0px 50px;
+    background-color:  #06283ddc;
+    border-top: 3px solid #06283ddc;
+    border-bottom: 3px solid #06283ddc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    font-family: Nautigal B ;
+}
+
+.item{
+    font-weight: bold;
+    flex:1;
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+@font-face {
+    font-family: Nautigal B;
+    src: url('/img/NautigalBold.ttf');
+}
+@font-face {
+    font-family: Nautigal R;
+    src: url('/img/NautigalRegular.ttf');
+}
+
+.item:nth-child(2){
+    flex: 3;
+    justify-content: center;
+    font-size: 80px;
+}
+
+.texts{
+    font-weight: bold;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+}
+
+.text{
+    font-size: 25px;
+}

@@ -1,5 +1,8 @@
 html,
 body {
+  background-image: url('../public/img/cabañas/exterior/entrada.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
