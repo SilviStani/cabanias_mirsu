@@ -1,3 +1,42 @@
 .container{
+    display: flex;
+    flex-direction: row;
+    color: whitesmoke;
+    background-color: #06283d;
+    justify-content: space-between;
     
+}
+
+.contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#link:hover, #whatsapp:hover, #mail:hover{
+    cursor: pointer;
+    color: rgb(0, 255, 0);
+}
+
+.p{
+padding: 10px 10px;
+text-align: center;
+}
+
+@font-face {
+    font-family: Nautigal B;
+    src: url('/img/NautigalBold.ttf');
+}
+@font-face {
+    font-family: Nautigal R;
+    src: url('/img/NautigalRegular.ttf');
+}
+
+.inicio{
+    font-family: Nautigal B;
+    font-size: 80px;
+}
+
+.a:hover{
+    color: rgb(0, 255, 0);
 }

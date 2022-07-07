@@ -3,8 +3,10 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Cabains from '../Components/cabains'
 import Ubicacion from '../Components/ubicacion'
+import { data } from '../imagenes.js'
+import Carrusel from '../Components/Carrusel'
 
-export default function Home() {
+export default function Home( { images } ) {
   return (
     <div className={styles.container}>
       <Head>
@@ -12,8 +14,17 @@ export default function Home() {
         <meta name="description" content="Las más lindas de la Villa <3" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-         <Cabains />
-         <Ubicacion />
+         <Carrusel />
+         <Ubicacion  />
+         <Cabains images = { images } />
     </div>
   )
+}
+
+
+export const getStaticProps = async () => {
+  const images = data;
+  return {
+    props: { images }
+  } 
 }

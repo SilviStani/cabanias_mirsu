@@ -1,18 +1,19 @@
 .container{
     height: 100px;
     padding: 0px 50px;
-    background-color:  #06283ddc;
-    border-top: 3px solid #06283ddc;
-    border-bottom: 3px solid #06283ddc;
+    background-color:  #06283d;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: sticky;
+    z-index: 999;
     top: 0;
     font-family: Nautigal B ;
+    cursor: pointer;
 }
 
 .item{
+    text-align: center;
     font-weight: bold;
     flex:1;
     display: flex;
@@ -20,6 +21,7 @@
     color: whitesmoke;
     font-size: 30px;
 }
+
 
 @font-face {
     font-family: Nautigal B;

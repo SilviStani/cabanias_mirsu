@@ -1,19 +1,62 @@
 .container{
-    height: calc(100vh - 100px);
+    height: calc(80vh - 100px);
     background-image: url('../public/img/cabañas/exterior/entrada.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
 }
 
-.container2{
+.video{
+    background-color: #06283d89;
+    width: 100vw;
+    height: 50%;
+    overflow: hidden;
     display: flex;
-    justify-content: center;
+    padding: 10px 10px;
+    flex: 1;
+}
+
+.video2{
+
+    border-radius: 50px;
+    width: 100%; 
+    height: 100%;
+    object-fit: contain;  
+    flex: 2; 
+}
+
+.space{
+    flex: 1;
+}
+
+.videoCabaña{
+    background-color: #06283d89;
+    width: 100vw;
+    height: 50%;
+    overflow: hidden;
+    display: flex;
+    padding: 10px 10px;
+}
+
+@font-face {
+    font-family: Nautigal B;
+    src: url('/img/NautigalBold.ttf');
+}
+@font-face {
+    font-family: Nautigal R;
+    src: url('/img/NautigalRegular.ttf');
+}
+
+.texto{
+    color: whitesmoke;
+    text-align: center;
+    display: flex;
     align-items: center;
-    height: 70vh;
-    width: 70vw;
-    background-color: rgba(245, 245, 245, 0.589);
-    
+    justify-content: flex-start;
+    font-family: Nautigal B;
+    font-size: 50px;
+    transform: rotate(-15DEG);
+    flex: 1;
 }

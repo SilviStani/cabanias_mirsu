@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../styles/ubicacion.module.css'
 import Image from 'next/image'
 
-const Ubicacion = () => {
+const Ubicacion = ( ) => {
   return (
     <div className={styles.container} id="ubicacion">
         <iframe  className={styles.iframe}
@@ -11,7 +11,7 @@ const Ubicacion = () => {
             height="450"
             allowFullScreen="" 
             loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
+            referrerPolicy="no-referrer-when-downgrade">
         </iframe>
         <div className={styles.line}/>
         <div className={styles.resume}>
@@ -29,22 +29,21 @@ const Ubicacion = () => {
           height="40px"
           width="40px"
           />
-          <h3>Lugares de interes cercanos</h3>
+          <h3 className={styles.h3}>Lugares de interes cercanos <br /><span className={styles.span}>  Selecciona un destino</span></h3>
           <ul>
-            <li>
-              <a href="https://goo.gl/maps/j1MpszmKRGHVAySL7" target="blank">Paseo Pozo Verde</a></li>
-            <li><a href="https://goo.gl/maps/4Mo86ssuvWv6dcVSA">Sendero Pozo Verde</a></li>
-            <li><a href="https://goo.gl/maps/vQW3VdDubyUDTEx99">Restaurant Bierkeller</a></li>
-            <li><a href="https://goo.gl/maps/6AmiGqEUy51YXVSU7">Champaqui Golf Club</a></li>
-            <li><a href="https://goo.gl/maps/8nnKZNdNjbUb5YWX6">Hebras casa de Té</a></li>
-            <li><a href="https://goo.gl/maps/1koGLhUCArkcgivd7">Bosque Encantado Don Otto</a></li>
-            <li><a href="https://goo.gl/maps/4YfpX4ZAVSLMaLW9A">Paseo Los Arroyos</a></li>
+            <li  className={styles.a}><a href="https://goo.gl/maps/j1MpszmKRGHVAySL7" target="blank" >Paseo Pozo Verde</a></li>
+            <li className={styles.a}><a href="https://goo.gl/maps/4Mo86ssuvWv6dcVSA" target="blank" >Sendero Pozo Verde</a></li>
+            <li className={styles.a}><a href="https://goo.gl/maps/vQW3VdDubyUDTEx99" target="blank" >Restaurant Bierkeller</a></li>
+            <li className={styles.a}><a href="https://goo.gl/maps/6AmiGqEUy51YXVSU7" target="blank" >Champaqui Golf Club</a></li>
+            <li className={styles.a}><a href="https://goo.gl/maps/8nnKZNdNjbUb5YWX6" target="blank" >Hebras casa de Té</a></li>
+            <li className={styles.a}><a href="https://goo.gl/maps/1koGLhUCArkcgivd7" target="blank" >Bosque Encantado Don Otto</a></li>
+            <li className={styles.a}><a href="https://goo.gl/maps/4YfpX4ZAVSLMaLW9A" target="blank" >Paseo Los Arroyos</a></li>
           </ul>
           <ul>
             <h3>Supermercado y Servicios varios</h3>
-            <li><a href="https://goo.gl/maps/S53Ks5zp9HNPnYdL9">Supermercado Becerra</a></li>
-            <li><a href="https://goo.gl/maps/UrVbEN2y2TdJcfMv6">Farmacia Traful</a></li>
-            <li><a href="https://goo.gl/maps/cXTAHrEXuGSKQSX78">El Carozo Verduleria Fruteria</a></li>
+            <li className={styles.a}><a href="https://goo.gl/maps/S53Ks5zp9HNPnYdL9" target="blank" >Supermercado Becerra</a></li>
+            <li className={styles.a}><a href="https://goo.gl/maps/UrVbEN2y2TdJcfMv6" target="blank" >Farmacia Traful</a></li>
+            <li className={styles.a}><a href="https://goo.gl/maps/cXTAHrEXuGSKQSX78" target="blank" >El Carozo Verduleria Fruteria</a></li>
           </ul>
         </div>
     </div>
