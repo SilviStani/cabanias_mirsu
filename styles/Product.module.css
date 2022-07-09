@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    padding: 50px;
+    background-color: whitesmoke;
+}
+
+.cardL{
+    display: flex;
+    flex: 2;
+    flex-wrap: wrap;
+}
+
+.cardS{
+    flex: 1;
+}
+
+.imgContainer{
+    width: 30%;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.imgContainer:hover{
+    transform: scale(1.5);
+    transition: all 1s ease;
+    z-index: 999;
+}
+
+.title, .desc{
+    color:#06283d;
+    font-weight: bold;
+}
+
+.photo{
+    border-radius: 20px;
+}

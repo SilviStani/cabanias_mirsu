@@ -11,6 +11,7 @@ const Cabains = ( ) => {
       autoPlay
       loop
       className={styles.video2}
+      loading="lazy" 
       />
       
       <p className={styles.texto}>Villa General Belgrano<br />Un lugar de encanto!</p>

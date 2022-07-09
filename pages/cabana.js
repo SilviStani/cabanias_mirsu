@@ -10,7 +10,7 @@ const cabana = () => {
       <div className={styles.services}>
         {
           data.map( i =>(
-            <Link key={i.id} href={i.name} passHref>
+            <Link key={i.id} href={ `cabanas/${i.name}` } passHref>
               <div className={styles.service}>
               <div className={styles.desc}>{i.desc}</div>
                 <span className={styles.cat}>{i.title}</span>

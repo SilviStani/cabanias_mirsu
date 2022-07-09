@@ -6,12 +6,8 @@ export const data = [
         desc: 'Hermosa Vista a las Sierras. Disfrute del hermoso parque del lugar.',
         video: '',
         photo: 'cabaña2.jpg',
-        longdesc: '',
+        longdesc: 'Es una bonita Cabaña completamente equipado de 2 a 6 personas. Tiene dos dormitorios. Heladera, cocina, microondas, pava  eléctrica, todo para cocinar y la vajilla necesaria. Sistema de Alarma, Detector de Humo, Fuga de Gas, y Monóxido de Carbono. Cochera cubierta. Quincho con asador. TV cable. Internet WiFi.  Ventilador de techo en todos los ambientes. Aire Acondicionado en dormitorio principal. Calefacción en todos los ambientes. Un parque arbolado de 1000 metros',
         images:[
-            {
-                id:1 ,
-                url:'1.jpg'
-            },
             {
                 id:2,
                 url:'2.jpg'
@@ -30,7 +26,7 @@ export const data = [
             },            
             {
                 id:6,
-                url:'9.jpg'
+                url:''
             },            
             {
                 id:7,
@@ -57,7 +53,7 @@ export const data = [
         desc: 'Nuestra Cabaña por dentro, un sueño hecho Realidad en medio de las Sierras Cordobesas',
         video: '',
         photo: '6.jpg',
-        longdesc: '',
+        longdesc: 'Es una bonita Cabaña completamente equipado de 2 a 6 personas. Tiene dos dormitorios. Heladera, cocina, microondas, pava  eléctrica, todo para cocinar y la vajilla necesaria. Sistema de Alarma, Detector de Humo, Fuga de Gas, y Monóxido de Carbono. Cochera cubierta. Quincho con asador. TV cable. Internet WiFi.  Ventilador de techo en todos los ambientes. Aire Acondicionado en dormitorio principal. Calefacción en todos los ambientes. Un parque arbolado de 1000 metros',
         images:[
             {
                 id: 1,
@@ -73,11 +69,11 @@ export const data = [
             },
             {
                 id: 4,
-                url: '11.jpg'
+                url: 'interior.jpg'
             },
             {
                 id: 5,
-                url: 'interior.jpeg'
+                url: ''
             },
             {
                 id: 6,
@@ -89,15 +85,11 @@ export const data = [
             },
             {
                 id: 8,
-                url: '7.jpg'
+                url: '11.jpg'
             },
             {
                 id: 9,
                 url: '8.jpg'
-            },
-            {
-                id: 10,
-                url: 'habitacion3.jpg'
             },
         ]
     }
