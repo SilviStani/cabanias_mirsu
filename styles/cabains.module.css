@@ -1,6 +1,6 @@
 .container{
     height: calc(80vh - 100px);
-    background-image: url('../public/img/cabañas/exterior/entrada.jpg');
+    background-image: url('../public/img/entrada.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;

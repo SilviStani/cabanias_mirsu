@@ -6,7 +6,7 @@ import Ubicacion from '../Components/ubicacion'
 import { data } from '../imagenes.js'
 import Carrusel from '../Components/Carrusel'
 
-export default function Home( { images } ) {
+export default function Home( ) {
   return (
     <div className={styles.container}>
       <Head>
@@ -16,15 +16,15 @@ export default function Home( { images } ) {
       </Head>
          <Carrusel />
          <Ubicacion  />
-         <Cabains images = { images } />
+         <Cabains />
     </div>
   )
 }
 
 
-export const getStaticProps = async () => {
+/*export const getStaticProps = async () => {
   const images = data;
   return {
     props: { images }
   } 
-}
+}*/
