@@ -22,6 +22,7 @@ const cabana = () => {
                    objectFit='cover'
                    layout='responsive'
                    alt=''
+                   loading='lazy'
                   />
                 </div>
               </div>
