@@ -28,7 +28,7 @@ function Navbar() {
         </Link>
         </div>
       <div className={styles.item}>
-        <Link href="/cabana"><h4>Cabaña</h4></Link>
+        <Link href="/cabana"><h4>Detalles Cabaña</h4></Link>
         </div>
       <div className={styles.item}>
         <Link href="/turismo"><h4>Ubicación y<br />Atracciones Turísticas</h4></Link>

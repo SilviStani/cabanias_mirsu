@@ -10,23 +10,15 @@ const [index, setIndex] = useState(0);
         "/img/2.jpg",
         "/img/3.jpg",
         "/img/4.jpg",
-        "/img/5.jpg",
-        "/img/6.jpg",
-        "/img/7.jpg",
-        "/img/8.jpg",
-        "/img/9.jpg",
-        "/img/10.jpg",
-        "/img/11.jpg",
-        "/img/12.jpg",
     ];
    
     
     const handleArrow = (direction) =>{
         if (direction === "l"){
-            setIndex(index !== 0 ? index-1 : 11)
+            setIndex(index !== 0 ? index-1 : 3)
         }
         if (direction === "r"){
-            setIndex(index !== 11 ? index+1 : 0);
+            setIndex(index !== 3 ? index+1 : 0);
         }
     }
     
@@ -44,6 +36,7 @@ const [index, setIndex] = useState(0);
                     alt=""
                     layout='fill'
                     objectFit='contain'
+                    loading='lazy'
                     />
             </div>
              ))
