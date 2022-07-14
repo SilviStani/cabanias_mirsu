@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styles from '../styles/Carrusel.module.css'
+import Mobile from './Mobileview'
 import Image from 'next/image'
 
 const Carrusel = () => {
@@ -25,7 +26,7 @@ const [index, setIndex] = useState(0);
     handleArrow();
   return (
     <div className={styles.container}>
-    <div className={styles.arrowContainer}>
+     <div className={styles.arrowContainer}>
         <Image src="/img/arrowl.png" alt ="" objectFit='contain' layout='fill' onClick={()=>handleArrow("l")} style={{left:0}}/>
     </div>
         <div className={styles.wrapper} style={{transform:`translateX(${-100*index}vw)`}}>
@@ -45,6 +46,7 @@ const [index, setIndex] = useState(0);
         <div className={styles.arrowContainer} style={{right:0}}>
         <Image src="/img/arrowr.png" alt ="" objectFit='contain' layout='fill' onClick={()=>handleArrow("r")}/>
         </div>
+        <Mobile className={styles.mobile}/>
     </div>
   )
 }

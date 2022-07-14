@@ -40,3 +40,10 @@ text-align: center;
 .a:hover{
     color: rgb(0, 255, 0);
 }
+
+@media screen and (max-width:480px) {
+    .contacto, .inicio{
+      display: none;
+    }
+   
+}

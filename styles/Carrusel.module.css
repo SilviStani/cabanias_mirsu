@@ -32,3 +32,30 @@
     position: relative;
     transition: all 1.5s ease-in-out;
 }
+
+.mobile{
+    display: none;
+}
+
+@media screen and (max-width:480px){
+    .container{
+        height: 20vh;
+        width: 100%;
+        overflow: hidden;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #06283d89;
+    }
+    .wrapper{
+        display: none;
+    }
+    .arrowContainer{
+       display: none;
+    }
+
+    .mobile{
+        display: contents;
+    }
+}

@@ -63,3 +63,34 @@
 opacity: 1;
 transition: all 1s ease;
 }
+
+@media screen and (max-width: 480px) {
+    .container{
+        padding: 20px;
+        background-color: whitesmoke;
+    }
+
+    .services{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service{
+        width: 300px;
+        height: 300px;
+        border-radius: 30px;
+    }
+
+    .media{
+        width: 80%;
+        height: 80%;
+    
+        overflow: hidden;
+        transition: all 1s ease;
+    }
+    .cat{
+        font-size: 12px;
+        color: #06283d;
+    }
+    
+}
