@@ -1,6 +1,6 @@
 .container{
     padding: 0 100px;
-    background-color:#06283d62;
+    background-color:whitesmoke;
 }
 
 .services{
@@ -34,7 +34,7 @@
     position: absolute;
     top: 10px;
     left: 10px;
-    color: whitesmoke;
+    color:#06283d;
     letter-spacing: 5px;
     font-weight: bold;
     text-transform: uppercase;

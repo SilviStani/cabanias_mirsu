@@ -3,7 +3,9 @@ import styles from '../styles/turismo.module.css'
 
 const Turismo = () => {
   return (
-    <div className={styles.container}>Turismo</div>
+    <div className={styles.container}>
+      
+    </div>
   )
 }
 
