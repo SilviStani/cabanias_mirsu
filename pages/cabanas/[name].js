@@ -21,8 +21,8 @@ const Product = ( { cabain } ) => {
                     className={styles.photo}
                     />
                 </div>
-                ))
-            }
+            ))
+        }
         </div>
         <div className={styles.cardS}>
             <h1 className={styles.title}>{cabain.title}</h1>
