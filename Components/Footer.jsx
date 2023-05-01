@@ -4,6 +4,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const Footer = () => {
+  const ano = new Date();
+  let fecha = ano.getFullYear();
   return (
       <footer className={styles.container}>
         <div className={styles.contacto}>
@@ -21,7 +23,7 @@ const Footer = () => {
             Cabañas Mirsú
           </Link>
         </div>
-        <div><p className={styles.p}>© 2022 - Cabañas Mirsú<br />
+        <div><p className={styles.p}>© {fecha} - Cabañas Mirsú<br />
                 Todos los Derechos Reservados</p></div>
         <div><p className={styles.p}>Desarrollado por: <br />
         <a href="https://react-portfolio-silvistani.vercel.app/" target='blank'>
