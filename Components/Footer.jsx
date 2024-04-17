@@ -26,7 +26,7 @@ const Footer = () => {
         <div><p className={styles.p}>© {fecha} - Cabañas Mirsú<br />
                 Todos los Derechos Reservados</p></div>
         <div><p className={styles.p}>Desarrollado por: <br />
-        <a href="https://react-portfolio-silvistani.vercel.app/" target='blank'>
+        <a href="https://silvina-portfolio.vercel.app/" target='blank'>
         <Image src="/img/contact_me.png" alt="SilviDev Logo" width={80} height={80} />
         </a>
         </p></div>
