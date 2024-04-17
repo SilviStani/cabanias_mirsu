@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <div className={styles.container}>
       <div className={styles.item}>
-        <a href='https://wa.me/+5493546457020' passHref target="blank" className={styles.item}>
+        <a href='https://wa.me/+5493546457020' passhref target="blank" className={styles.item}>
       <div className={styles.callButton}>
         <Image 
         src='/img/whatsapp.png' 

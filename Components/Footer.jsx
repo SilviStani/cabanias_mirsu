@@ -16,7 +16,7 @@ const Footer = () => {
          Córdoba
           </p> 
           </Link>
-          <p className={styles.p}><a href='https://wa.me/+5493546457020' passHref target="blank" id={styles.whatsapp}>+5493546457020</a><br /><a href="mailTo:cabanasmirsuvgbcordoba@gmail.com" passHref id={styles.mail}>cabanasmirsuvgbcordoba@gmail.com</a></p>
+          <p className={styles.p}><a href='https://wa.me/+5493546457020' passhref target="blank" id={styles.whatsapp}>+5493546457020</a><br /><a href="mailTo:cabanasmirsuvgbcordoba@gmail.com" passHref id={styles.mail}>cabanasmirsuvgbcordoba@gmail.com</a></p>
         </div>
         <div className={styles.inicio} >
           <Link href="/">
