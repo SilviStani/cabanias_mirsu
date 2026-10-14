@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es-AR">
+<meta charset="utf-8">
+<title>Tarjeta para compartir · Cabañas Mirsú</title>
+<style>body{margin:0;background:#f8f6f0}canvas{display:block;width:1200px;height:630px}#export{display:none}</style>
+<canvas id="card" width="1200" height="630" aria-label="Cabañas Mirsú en Villa General Belgrano"></canvas>
+<pre id="export"></pre>
+<script>
+  const canvas = document.getElementById('card');
+  const ctx = canvas.getContext('2d');
+  const photo = new Image();
+  photo.onload = () => {
+    ctx.fillStyle = '#f8f6f0';
+    ctx.fillRect(0, 0, 1200, 630);
+    const scale = Math.max(1200 / photo.width, 450 / photo.height);
+    const width = photo.width * scale;
+    const height = photo.height * scale;
+    ctx.save();
+    ctx.beginPath();
+    ctx.rect(0, 0, 1200, 450);
+    ctx.clip();
+    ctx.drawImage(photo, (1200 - width) / 2, (450 - height) / 2, width, height);
+    ctx.restore();
+    ctx.fillStyle = '#294c3b';
+    ctx.font = '82px Georgia';
+    ctx.fillText('Mirsú', 55, 550);
+    ctx.font = 'bold 18px Arial';
+    ctx.fillText('C A B A Ñ A S', 61, 585);
+    ctx.fillStyle = '#d5d9cd';
+    ctx.fillRect(350, 490, 2, 95);
+    ctx.fillStyle = '#294c3b';
+    ctx.font = '40px Georgia';
+    ctx.fillText('Villa General Belgrano', 405, 531);
+    ctx.fillStyle = '#667067';
+    ctx.font = '25px Arial';
+    ctx.fillText('Córdoba · De 2 a 6 personas', 407, 574);
+    ctx.fillStyle = '#a65d3d';
+    ctx.fillRect(0, 618, 1200, 12);
+    document.getElementById('export').textContent = canvas.toDataURL('image/jpeg', 0.88);
+  };
+  photo.src = '../public/img/3.jpg';
+</script>
+</html>

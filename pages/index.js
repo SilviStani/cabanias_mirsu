@@ -1,4 +1,5 @@
-import Head from 'next/head';
+import Seo from '../Components/Seo';
+import { homeTitle, homeDescription, lodgingSchema } from '../lib/seo';
 import Image from 'next/image';
 import Link from 'next/link';
 import Icon from '../Components/Icon';
@@ -18,12 +19,12 @@ const mapUrl = 'https://www.google.com/maps/search/?api=1&query=Av.+El+Mirador+5
 
 export default function Home() {
   return <>
-    <Head><title>Cabañas Mirsú | Tu descanso en Villa General Belgrano</title><meta name="description" content="Disfrutá de Cabañas Mirsú en Villa General Belgrano, Córdoba. Cabaña para 2 a 6 personas, dos dormitorios, parque y quincho con asador. Consultá tu estadía." /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="icon" href="/img/logoMirsu.png" /><meta property="og:title" content="Cabañas Mirsú · Villa General Belgrano" /><meta property="og:description" content="Un lugar para bajar el ritmo. Conocé la cabaña y consultá tu próxima escapada." /></Head>
+    <Seo title={homeTitle} description={homeDescription} structuredData={lodgingSchema} />
     <section className={`shell ${styles.hero}`} aria-labelledby="hero-title">
       <div className={styles.heroCopy}>
         <p className={`eyebrow ${styles.location}`}><span />VILLA GENERAL BELGRANO · CÓRDOBA</p>
-        <h1 id="hero-title">Un lugar para<br />bajar el <em>ritmo.</em></h1>
-        <p className={styles.intro}>Entre sierras, árboles y aire fresco.<br />Tu próxima escapada tiene un lugar en Mirsú.</p>
+        <h1 id="hero-title">Cabañas en<br />Villa General<br /><em>Belgrano.</em></h1>
+        <p className={styles.intro}>Un lugar para bajar el ritmo en Córdoba.<br />Cabaña para 2 a 6 personas, entre árboles y aire fresco.</p>
         <div className={styles.actions}><a className="button" href="#consulta">Consultar disponibilidad <Icon name="arrow" size={17} /></a><a className="text-link" href="#cabana">Conocé la cabaña <span aria-hidden="true">↓</span></a></div>
         <div className={styles.heroNote}><Icon name="tree" size={22} /><span>Unos días de descanso.<br /><strong>Muchos momentos para recordar.</strong></span></div>
       </div>
@@ -37,7 +38,7 @@ export default function Home() {
     </div>
     <section id="cabana" className={`shell ${styles.about}`} aria-labelledby="about-title">
       <div className={styles.aboutPhoto}><Image src="/img/interior2.jpg" alt="Ambiente interior de la cabaña, con sus muebles de madera" layout="fill" objectFit="cover" sizes="(max-width: 760px) 90vw, 40vw" /><span className={styles.photoLabel}>SENTITE COMO EN CASA</span></div>
-      <div className={styles.aboutCopy}><p className="eyebrow">LA CABAÑA</p><h2 id="about-title">Días simples.<br />Lindos recuerdos.</h2><p>Un desayuno sin apuro, un asado compartido, una tarde en el parque. Mirsú te invita a disfrutar de esos pequeños planes que hacen bien.</p><p>Nuestra cabaña tiene dos dormitorios y espacio para 2 a 6 personas. Está equipada para que puedas cocinar, descansar y disfrutar de Villa General Belgrano a tu manera.</p><a href="#galeria" className="text-link">Recorré los espacios <Icon name="arrow" size={17} /></a></div>
+      <div className={styles.aboutCopy}><p className="eyebrow">LA CABAÑA</p><h2 id="about-title">Tu cabaña para<br />2 a 6 personas.</h2><p>Un desayuno sin apuro, un asado compartido, una tarde en el parque. Mirsú te invita a disfrutar de esos pequeños planes que hacen bien.</p><p>Nuestra cabaña tiene dos dormitorios y espacio para 2 a 6 personas. Está equipada para que puedas cocinar, descansar y disfrutar de Villa General Belgrano a tu manera.</p><a href="#galeria" className="text-link">Recorré los espacios <Icon name="arrow" size={17} /></a></div>
     </section>
     <section className={styles.amenities} aria-labelledby="amenities-title"><div className="shell">
       <div className={styles.sectionHeading}><div><p className="eyebrow">LOS DETALLES QUE SUMAN</p><h2 id="amenities-title">Todo para estar a gusto.</h2></div><p>Vos traé las ganas de descansar.<br />Acá tenés lo que necesitás para tu estadía.</p></div>

@@ -2,11 +2,12 @@ export const data = [
     {
         id: 1,
         name: 'externa' ,
-        title: 'Exterior Cabaña',
-        desc: 'Hermosa Vista a las Sierras. Disfrute del hermoso parque del lugar.',
+        title: 'El exterior y el parque de Mirsú',
+        seoTitle: 'Cabaña con parque y asador en Villa General Belgrano | Mirsú',
+        desc: 'Descubrí el parque arbolado, la galería, el quincho con asador y la cochera cubierta de Cabañas Mirsú, en Villa General Belgrano, Córdoba.',
         video: '',
         photo: 'cabaña2.jpg',
-        longdesc: 'Es una bonita Cabaña completamente equipado de 2 a 6 personas. Tiene dos dormitorios. Heladera, cocina, microondas, pava  eléctrica, todo para cocinar y la vajilla necesaria. Sistema de Alarma, Detector de Humo, Fuga de Gas, y Monóxido de Carbono. Cochera cubierta. Quincho con asador. TV cable. Internet WiFi.  Ventilador de techo en todos los ambientes. Aire Acondicionado en dormitorio principal. Calefacción en todos los ambientes. Un parque arbolado de 1000 metros',
+        longdesc: 'Disfrutá del parque arbolado de nuestra cabaña en Villa General Belgrano, Córdoba. La galería y el quincho con asador invitan a compartir un desayuno tranquilo o un asado al aire libre. También contamos con cochera cubierta. Estamos en Av. El Mirador 526, a 10 cuadras del centro.',
         images:[
             {
                 id:2,
@@ -45,11 +46,12 @@ export const data = [
     {
         id: 2,
         name: 'interior' ,
-        title: 'Interior Cabaña',
-        desc: 'Nuestra Cabaña por dentro, un sueño hecho Realidad en medio de las Sierras Cordobesas',
+        title: 'El interior de la cabaña Mirsú',
+        seoTitle: 'Cabaña con dos dormitorios en Villa General Belgrano | Mirsú',
+        desc: 'Mirá el interior de Cabañas Mirsú: dos dormitorios para 2 a 6 personas, cocina equipada, WiFi y calefacción en Villa General Belgrano, Córdoba.',
         video: '',
         photo: '6.jpg',
-        longdesc: 'Es una bonita Cabaña completamente equipado de 2 a 6 personas. Tiene dos dormitorios. Heladera, cocina, microondas, pava  eléctrica, todo para cocinar y la vajilla necesaria. Sistema de Alarma, Detector de Humo, Fuga de Gas, y Monóxido de Carbono. Cochera cubierta. Quincho con asador. TV cable. Internet WiFi.  Ventilador de techo en todos los ambientes. Aire Acondicionado en dormitorio principal. Calefacción en todos los ambientes. Un parque arbolado de 1000 metros',
+        longdesc: 'Nuestra cabaña tiene dos dormitorios y capacidad para 2 a 6 personas. La cocina cuenta con heladera, microondas, pava eléctrica y vajilla. Para tu comodidad, hay WiFi, TV por cable, calefacción y ventiladores en todos los ambientes, además de aire acondicionado en el dormitorio principal. Conocé los espacios de tu próxima estadía en Villa General Belgrano.',
         images:[
             {
                 id: 1,
