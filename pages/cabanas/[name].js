@@ -1,56 +1,24 @@
-import React from 'react'
-import styles from '../../styles/Product.module.css'
-import { data } from '../../imagenes'
-import Image from 'next/image'
+import Head from 'next/head';
+import Link from 'next/link';
+import { data } from '../../imagenes';
+import Gallery from '../../Components/Gallery';
+import Icon from '../../Components/Icon';
+import styles from '../../styles/Product.module.css';
 
-const Product = ( { cabain } ) => {
-  return (
-    <div className={styles.container}>
-        <div className={styles.cardL}>
-            {
-                cabain.images.map( img => (
-                <div key={img.id} className={styles.imgContainer}>
-                    <Image 
-                    src={`/img/${img.url}`}
-                    alt=""
-                    height="100%"
-                    width="100%"
-                    objectFit="cover"
-                    layout='responsive'
-                    loading="lazy" 
-                    className={styles.photo}
-                    />
-                </div>
-            ))
-        }
-        </div>
-        <div className={styles.cardS}>
-            <h1 className={styles.title}>{cabain.title}</h1>
-            <p className={styles.desc}>{cabain.longdesc}</p>
-        </div>
-    </div>
-  )
+export default function Product({ cabain }) {
+  const photos = cabain.images.filter(image => image.url).map((image, index) => ({ url: image.url, alt: `${cabain.title}: vista ${index + 1}`, label: cabain.title }));
+  return <div className={`shell ${styles.page}`}>
+    <Link href="/cabana"><a className="text-link">← Volver a la cabaña</a></Link>
+    <Head><title>{`${cabain.title} | Cabañas Mirsú`}</title><meta name="description" content={cabain.desc} /></Head>
+    <div className={styles.heading}><div><p className="eyebrow">MIRSÚ, EN DETALLE</p><h1>{cabain.title}</h1></div><Link href="/#consulta"><a className="button">Consultar estadía <Icon name="arrow" size={17} /></a></Link></div>
+    <p className={styles.description}>{cabain.longdesc}</p>
+    <Gallery photos={photos} compact />
+  </div>;
 }
-
-export const getStaticPaths = async () => {
-    const products = data;
-    const paths = products.map( (i)=> {
-        return{
-            params: {name: i.name},
-        };
-    });
-    return{
-        paths,
-        fallback: false,
-    };
-};
-
-export const getStaticProps = async (ctx) => {
-    const name = ctx.params.name;
-    const cabain = data.filter((item) => item.name === name)[0];
-    return{
-        props: { cabain },
-    };
-};
-
-export default Product;
+export async function getStaticPaths() {
+  return { paths: data.map(item => ({ params: { name: item.name } })), fallback: false };
+}
+export async function getStaticProps({ params }) {
+  const cabain = data.find(item => item.name === params.name);
+  return cabain ? { props: { cabain } } : { notFound: true };
+}

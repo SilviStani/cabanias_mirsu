@@ -1,12 +1,5 @@
-import React from 'react'
-import styles from '../styles/turismo.module.css'
+export default function Turismo() { return null; }
 
-const Turismo = () => {
-  return (
-    <div className={styles.container}>
-      
-    </div>
-  )
+export function getServerSideProps() {
+  return { redirect: { destination: '/#ubicacion', permanent: true } };
 }
-
-export default Turismo

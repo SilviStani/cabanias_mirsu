@@ -1,16 +1,6 @@
-import React, {useState} from 'react'
-import Footer from './Footer'
-import Navbar from './Navbar'
+import Footer from './Footer';
+import Navbar from './Navbar';
 
-
-const Layout = ({children}) => {
-  return (
-    <>
-        <Navbar />
-        {children}
-        <Footer />
-    </>
-  )
+export default function Layout({ children }) {
+  return <><Navbar /><main id="contenido">{children}</main><Footer /></>;
 }
-
-export default Layout

@@ -1,49 +1,12 @@
-.container{
-    display: flex;
-    flex-direction: row;
-    color: whitesmoke;
-    background-color: #06283d;
-    justify-content: space-between;
-    
-}
-
-.contacto{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#link:hover, #whatsapp:hover, #mail:hover{
-    cursor: pointer;
-    color: rgb(0, 255, 0);
-}
-
-.p{
-padding: 10px 10px;
-text-align: center;
-}
-
-@font-face {
-    font-family: Nautigal B;
-    src: url('/img/NautigalBold.ttf');
-}
-@font-face {
-    font-family: Nautigal R;
-    src: url('/img/NautigalRegular.ttf');
-}
-
-.inicio{
-    font-family: Nautigal B;
-    font-size: 80px;
-}
-
-.a:hover{
-    color: rgb(0, 255, 0);
-}
-
-@media screen and (max-width:480px) {
-    .contacto, .inicio{
-      display: none;
-    }
-   
-}
+.footer { background: #223e30; color: #f8f6f0; padding: 60px 0 24px; }
+.top { display: grid; grid-template-columns: 1.2fr 1fr 1.2fr; gap: 40px; }
+.brand { font-family: Georgia, serif; font-size: 42px; line-height: 1; display: inline-block; }
+.brand span { display: block; font-family: Arial, sans-serif; font-size: 8px; letter-spacing: .35em; margin-top: 10px; }
+.top p { color: #c5cfc4; font-size: 12px; margin-top: 20px; }
+.top h2 { font: 600 12px Arial, sans-serif; margin: 7px 0 22px; letter-spacing: .04em; }
+.top a:not(.brand) { font-size: 12px; }
+.top a:hover, .bottom a:hover { text-decoration: underline; }
+.top a svg { vertical-align: middle; margin-left: 8px; }
+.email { display: block; margin-top: 10px; overflow-wrap: anywhere; }
+.bottom { border-top: 1px solid #ffffff26; margin-top: 40px; padding-top: 22px; display: flex; justify-content: space-between; gap: 20px; font-size: 10px; color: #c5cfc4; }
+@media (max-width: 760px) { .top { grid-template-columns: 1fr; gap: 28px; } .top h2 { margin-bottom: 14px; } .top p { margin-bottom: 0; } .bottom { flex-direction: column; gap: 8px; } }

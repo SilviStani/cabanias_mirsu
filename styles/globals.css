@@ -1,17 +1,26 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
+:root { --paper: #f8f6f0; --ink: #263e33; --muted: #667067; --line: #dcded3; --green: #294c3b; --accent: #a65d3d; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 110px; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; }
+a { color: inherit; text-decoration: none; }
+button, input, select { font: inherit; }
+button, a, input, select, summary { -webkit-tap-highlight-color: transparent; }
+button, summary { cursor: pointer; }
+button { color: inherit; }
+img { max-width: 100%; }
+h1, h2, h3, p { margin-top: 0; }
+h1, h2, h3 { line-height: 1.15; }
+h1, h2 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; letter-spacing: -.045em; }
+:focus-visible { outline: 3px solid #a65d3d; outline-offset: 5px; }
+::selection { background: #d9e4cd; color: #203a2c; }
+.shell { width: min(1240px, calc(100% - 96px)); margin-inline: auto; }
+.eyebrow { font-size: 11px; letter-spacing: .2em; font-weight: 700; text-transform: uppercase; }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 14px; padding: 15px 23px; min-height: 50px; border: 1px solid var(--green); border-radius: 4px; background: var(--green); color: white; font-size: 13px; font-weight: 600; line-height: 1.4; transition: background .2s, color .2s; }
+.button:hover { background: #193728; }
+.button.secondary { background: transparent; color: var(--green); }
+.button.secondary:hover { background: #e8ecdf; }
+.text-link { display: inline-flex; align-items: center; gap: 14px; padding-block: 10px; border-bottom: 1px solid currentColor; font-size: 13px; font-weight: 600; }
+.skip-link { position: fixed; top: -100px; left: 16px; z-index: 100; padding: 12px 20px; background: white; }
+.skip-link:focus { top: 12px; }
+@media (max-width: 760px) { html { scroll-padding-top: 90px; } .shell { width: calc(100% - 40px); } body { padding-bottom: 78px; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation: none !important; transition: none !important; } }

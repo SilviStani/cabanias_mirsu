@@ -1,0 +1,15 @@
+.section { background: #e9eddf; padding: 58px 48px 40px; border-radius: 6px; }
+.heading { text-align: center; }
+.heading h2 { font-size: clamp(30px, 4vw, 43px); margin: 12px 0; }
+.heading p { font-size: 14px; color: #56634f; }
+.form { margin-top: 30px; }
+.fields { display: grid; grid-template-columns: 1fr 1fr .85fr 1.4fr; gap: 16px; align-items: flex-end; }
+.fields label { display: flex; flex-direction: column; gap: 7px; font-size: 12px; font-weight: 600; min-width: 0; }
+.fields input, .fields select { width: 100%; min-width: 0; min-height: 52px; padding: 12px; border: 1px solid #b6bfaa; border-radius: 4px; background: var(--paper); color: var(--ink); font-size: 14px; }
+.fields button { min-height: 52px; }
+.note { text-align: center; margin: 17px 0 0; color: #56634f; font-size: 11px; }
+.direct { display: flex; width: fit-content; max-width: 100%; min-height: 54px; text-align: center; margin: 24px auto 0; padding: 16px 22px; font-size: 14px; }
+.direct svg { flex-shrink: 0; }
+.error { margin-top: 12px; color: #8d2b20; text-align: center; font-size: 13px; }
+@media (max-width: 1000px) { .fields { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .section { padding: 38px 20px 25px; } .fields { gap: 16px 10px; } .fields button { grid-column: 1 / -1; } .fields label:last-of-type { grid-column: 1 / -1; } .heading p { font-size: 13px; } }

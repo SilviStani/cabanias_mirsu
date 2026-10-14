@@ -25,10 +25,6 @@ export const data = [
                 url:'5.jpg'
             },            
             {
-                id:6,
-                url:''
-            },            
-            {
                 id:7,
                 url:'cabaña2.jpg'
             },            
@@ -70,10 +66,6 @@ export const data = [
             {
                 id: 4,
                 url: 'interior.jpg'
-            },
-            {
-                id: 5,
-                url: ''
             },
             {
                 id: 6,
