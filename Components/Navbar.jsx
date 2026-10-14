@@ -22,3 +22,4 @@ export default function Navbar() {
     <div className={styles.mobileBar}><span>Tu próxima escapada<small>Villa General Belgrano, Córdoba</small></span><Link href="/#consulta"><a className="button">Consultar <Icon name="arrow" size={16} /></a></Link></div>
   </>;
 }
+/* hola test */
